@@ -27,6 +27,7 @@
                 lightgreen: 'rgba(171, 239, 95, 0.5)',
                 extralightgreen: 'rgba(171, 239, 95, 0.2)',
                 background: '#f4f4f4',
+                background1: '#f8f8f8',
                 pink: '#E7C1D3',
                 yellow: '#EFDA6E',
                 lemon: '#A4DAC3',
@@ -47,11 +48,11 @@
     
     <title>Renterio</title>
 </head>
-<body>
+<body class="bg-background1">
     <header class="">
         <!-- Navbar Section -->
-        <nav class="max-w-[1440px] mx-auto lg:mt-16  ">
-           <div class="navbar bg-base-100 font-manrope">
+        <nav class="max-w-[1440px] mx-auto lg:pt-16  ">
+           <div class="navbar bg-base-100 font-manrope bg-background1">
                <div class="navbar-start">
                
    
@@ -67,14 +68,14 @@
                  </ul>
                </div>
                <div class="navbar-end ">
-                   <i class="fa-solid fa-magnifying-glass px-2 py-1 border-gray border-2 rounded-full text-xl hidden lg:block"></i>
-                   <i class="mx-2 fa-solid fa-cart-shopping px-2 py-1 text-xl border-2 border-gray rounded-full  hidden lg:block"></i>
-                 <a class="btn rounded-full bg-green font-bold bg-green hidden lg:block pt-2" >Book Consult <i class="fa-solid fa-arrow-right fa-rotate-by px-2 py-2 bg-black rounded-full text-white" style="--fa-rotate-angle: -45deg;"></i></a>
+                   <i class="fa-solid fa-magnifying-glass px-2 py-1 border-border1 bg-white border-2 rounded-full text-xl hidden lg:block"></i>
+                   <i class="mx-2 fa-solid fa-cart-shopping px-2 py-1 bg-white text-xl border-2 border-border1 rounded-full  hidden lg:block"></i>
+                 <a class="btn rounded-full bg-green font-bold bg-green hidden lg:block pt-2" >Book Consult <i class="fa-solid fa-arrow-right fa-rotate-by p-2 bg-black first-letter: rounded-full text-white" style="--fa-rotate-angle: -45deg;"></i></a>
    
    
                  <div class="dropdown">
                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                       <i class="fa-solid fa-bars"></i>
+                       <i class="fa-solid p-2 rounded-full border-border1 border-2 fa-bars"></i>
                    </div>
                    <ul
                        tabindex="0"
@@ -91,7 +92,7 @@
         </nav>
         <!-- banner section -->
          <section class="lg:mt-14 max-w-[1440px] mx-auto font-manrope lg:mb-[100px]   ">
-           <img class=" mx-auto" src="assets/banner.png" alt="">
+           <img class=" mx-auto lg:p-0 px-10" src="assets/banner.png" alt="">
            <h1 class="lg:text-6xl lg:px-0 px-4 text-3xl font-extrabold text-center max-w-[1085px]  mx-auto">
                A barn house of this design has a striking appearance
            </h1>
@@ -129,7 +130,7 @@
                        <img src="assets/commercial.png" alt="">
                    </div>
                    <div class="pl-2">
-                       <p class="text-xl font-medium text-text_49">Commercial</p>
+                       <p class="text-xl font-extrabold text-text_49">Commercial</p>
                        <p class=" text-gray text-base">Elevating business environments with innovative, efficient, and stylish design solutions.</p>
    
                    </div>
@@ -142,7 +143,7 @@
                        <img src="assets/residential.png" alt="">
                    </div>
                    <div class="pl-2">
-                       <p class="text-xl font-medium text-text_49">residential</p>
+                       <p class="text-xl font-extrabold text-text_49">Residential</p>
                        <p class=" text-gray text-base">Crafting homes that balance comfort, elegance, and personal expression.</p>
    
                    </div>
@@ -220,7 +221,7 @@
             <div class="font-manrope">
                 <!-- upper part -->
                  <div class="lg:flex justify-center gap-x-6">
-                    <div class="lg:w-[772px] p-6 border-2 lg:flex rounded-3xl border-border1 lg:mx-0 w-[335px] mx-auto">
+                    <div class="lg:w-[772px]  bg-white p-6 border-2 lg:flex rounded-3xl border-border1 lg:mx-0 w-[335px] mx-auto">
                         <img class="lg:mx-0 mx-auto"  src="assets/img1.png" alt="">
                         <div class="pl-4">
                             <p class="font-extrabold text-2xl text-text_49">Commercial</p>
@@ -229,17 +230,17 @@
                         </div>
                     </div>
 
-                    <div class="p-6 rounded-3xl border lg:m-0 mt-4 border-border1 lg:max-w-[374px] max-w-[335px] mx-auto">
+                    <div class="p-6  bg-white rounded-3xl border lg:m-0 mt-4 border-border1 lg:max-w-[374px] max-w-[335px] mx-auto">
                         <img src="assets/img2.png" alt="">
                     </div>
                  </div>
                  <!-- lower part -->
                   <div class="lg:flex justify-center gap-x-6 mt-6">
-                    <div class="p-6 lg:order-3 rounded-3xl   border lg:m-0 mt-4 border-border1 lg:max-w-[274px] max-w-[335px] mx-auto">
+                    <div class="p-6  bg-white lg:order-3 rounded-3xl   border lg:m-0 mt-4 border-border1 lg:max-w-[274px] max-w-[335px] mx-auto">
                         <img class="mx-auto lg:mx-0" src="assets/img5.png" alt="">
                     </div>
 
-                    <div class="lg:w-[573px]  my-6 lg:my-0 lg:order-2 p-6 border-2 lg:flex rounded-3xl border-border1 lg:mx-0 w-[335px] mx-auto">
+                    <div class="lg:w-[573px]  bg-white  my-6 lg:my-0 lg:order-2 p-6 border-2 lg:flex rounded-3xl border-border1 lg:mx-0 w-[335px] mx-auto">
 
                             <img class="lg:mx-0 mx-auto" src="assets/img4.png" alt="">
     
@@ -250,11 +251,11 @@
                         </div>
                     </div>
 
-                    <div class="p-6 object-cover  lg:order-1 rounded-3xl border lg:m-0 mt-4 border-border1 lg:max-w-[274px] max-w-[335px] mx-auto">
+                    <div class="p-6 object-cover  bg-white lg:order-1 rounded-3xl border lg:m-0 mt-4 border-border1 lg:max-w-[274px] max-w-[335px] mx-auto">
                         <img class="mx-auto lg:mx-0" src="assets/img3.png" alt="">
                     </div>
 
-                    <div class="p-6 lg:hidden rounded-3xl   border lg:m-0 mt-6 border-border1 lg:max-w-[274px] max-w-[335px] mx-auto">
+                    <div class="p-6 lg:hidden rounded-3xl  bg-white   border lg:m-0 mt-6 border-border1 lg:max-w-[274px] max-w-[335px] mx-auto">
                         <img class="mx-auto lg:mx-0" src="assets/img5.png" alt="">
                     </div>
 
@@ -280,7 +281,7 @@
 
         <!-- input section -->
          <div class="text-center lg:flex lg:ml-0 ml-2 justify-center gap-6 px-4">
-            <input class="lg:w-[473px]  w-[380px] lg:mb-0 mb-5 block p-5 bg-white rounded-full" type="text" name="" id="" placeholder="First Name*">
+            <input class="lg:w-[473px]   w-[380px] lg:mb-0 mb-5 block p-5 bg-white rounded-full" type="text" name="" id="" placeholder="First Name*">
             <input class="lg:w-[473px] w-[380px] block p-5 bg-white rounded-full" type="text" name="" id="" placeholder="Last Name*">
          </div>
 
